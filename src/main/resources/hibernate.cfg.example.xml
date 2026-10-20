@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "https://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- MySQL Connection -->
+        <property name="hibernate.connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/hospital_management
+        </property>
+
+        <property name="hibernate.connection.username">root</property>
+
+        <!-- Replace with your actual MySQL password -->
+        <property name="hibernate.connection.password">PASSWORD</property>
+
+        <!-- Hibernate Settings -->
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">false</property>
+
+        <!-- Validate existing tables; do not recreate them -->
+        <property name="hibernate.hbm2ddl.auto">validate</property>
+
+        <!-- Entity Mapping -->
+        <mapping class="com.hospital.entity.Patient"/>
+        <mapping class="com.hospital.entity.Doctor"/>
+        <mapping class="com.hospital.entity.Appointment"/>
+    </session-factory>
+</hibernate-configuration>

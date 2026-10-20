@@ -1,0 +1,9 @@
+# Ignore local Hibernate configuration containing database credentials
+src/main/resources/hibernate.cfg.xml
+
+# Ignore compiled Java files
+target/
+
+# Ignore IDE files
+.idea/
+*.iml

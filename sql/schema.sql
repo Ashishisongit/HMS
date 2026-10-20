@@ -1,0 +1,2 @@
+CREATE DATABASE Hospital_Management;
+USE Hospital_Management;
