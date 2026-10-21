@@ -63,6 +63,4 @@ DESC patients;
 DESC appointments;
 SELECT * FROM patients;
 SELECT * FROM appointments;
-DELETE FROM patients WHERE patient_id BETWEEN 25 AND 34;
-DELETE FROM patients WHERE patient_id BETWEEN 5 AND 14;
 SELECT * FROM doctors;
